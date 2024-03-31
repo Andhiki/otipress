@@ -1,0 +1,28 @@
+~ Additional ~
+
+Dark Mode (Toggle button on clicked)
+
+Animation:
+- Sign In / Sign Up button (Hover)
+- Switch theme button (On click)
+- Navigation Bar (Hover)
+- Card Title (Hover)
+
+Expand:
+- Expanded topics
+- Expanded writer lists
+
+Other Pages:
+- Sign In Page
+- Sign Up Page
+- 1st Trend Page
+
+The First Trend Card can be clicked in the title or image to go to the news section and the page can also switch to dark/light mode.   
+Also "Recommendation for you" section in 1st Trend Page which provide some new published
+
+I added an animation to the theme button (moon & sun) so that when the button is pressed the animation will appear along with changing the page theme to dark/light mode.
+
+I added an animation to the sign in/sign up button as well so that when the cursor is above the button or rather in a box with a different color, the box will change.
+
+I added a new page, the sign in page, which can be accessed by pressing the sign in/sign up button.
+On the sign in & sign up page we can use the button to return to home also on the top left.

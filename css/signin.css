@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #F2F1F0;
+    --secondary-color: #2C2828;
+}
+
+.dark-mode {
+    --main-color: #2C2828;
+    --secondary-color: #F2F1F0;
+}
+
+body {
+    display: flex;
+    background: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back {
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+}
+
+.back-home {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 300px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px 30px 20px;
+    color: var(--secondary-color);
+}
+
+.wrapper h1 {
+    font-family: 'Play Fair', serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #D23636;
+    margin-top: 15px;
+}
+
+.wrapper .input-user {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-user input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder {
+    color: var(--secondary-color);
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -25px 0 15px;
+    font-family: "Lato", sans-serif;
+}
+
+.remember-forgot label input {
+    accent-color: var(--secondary-color);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;   
+}
+
+.wrapper .submit-btn {
+    width: 100%;
+    height: 45px;
+    background: var(--secondary-color);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.wrapper .signup-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.signup-link p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Theme */
+
+.theme-button {
+    position: absolute;
+    right: 5rem;
+    top: 5.6rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-button input {
+    position: absolute;
+    opacity: 0;
+}
+
+.sun {
+    position: absolute;
+    font-size: 2em;
+    color: var(--secondary-color);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.theme-button input:checked~.sun {
+    transition-delay: .8s;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    font-size: 3em;
+    color: var(--secondary-color);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transition: 1s ease;
+    transition-delay: .8s;
+}
+
+.theme-button input:checked ~ .moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.toggle {
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    color: var(--secondary-color);
+    transition: 1s;
+}
+
+theme:checked ~ toggle {
+    background: var(--main-color);
+}
